@@ -1,0 +1,262 @@
+/* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/inter-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-500 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/inter-v11-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v11-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-700 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/inter-v11-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v11-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-800 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/inter-v11-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v11-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  html{
+      box-sizing: border-box;
+  }
+  *, *::before, *::after{
+      box-sizing: inherit;
+  }
+  body{
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #FFFFFF;
+    background-color: #2A2A2A;
+  }
+.wrapper{
+    max-width: 606px;
+    margin: 0 auto;
+}
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 32px;
+}
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.header__item{
+    margin-right: 60px;
+}
+.header__link{
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.header__link:hover, .header__link:focus, .header__link:active{
+    opacity: .75;
+}
+/* Header styles end*/
+
+/*Intro */
+
+
+.intro{
+    padding-top: 118.67px;
+    margin-bottom: 16px;
+}
+.title{
+    max-width: 560px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.subtitle{
+    max-width: 560px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 16px;
+}
+.link{
+    display: inline-block;
+    padding-right: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: url(../img/svg/arrow.svg) no-repeat 97% center;
+    transition: .2s all;
+}
+.link:hover, .link:focus{
+    background: url(../img/svg/arrow.svg) no-repeat right center;
+}
+
+/* Intro end */
+
+/* Experience */
+.experienc__wrap{
+    max-width: 606px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.experience__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 112px;
+}
+
+.work__period{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.job__title{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 8px;
+}
+
+.job__descr{
+    text-align: justify;
+    max-width: 456px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 8px;
+}
+.experience__pic__logo{
+    float: right;
+    padding-top: 24px;
+}
+/* Experience end*/
+
+/* Skills */
+.skill__wrap{
+    max-width: 606px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.skill__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 112px;
+}
+
+.skills__list{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+
+/* Skills end */
+
+/* Contacts */
+.education__wrap{
+    max-width: 606px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.edu__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 112px;
+}
+.education__period{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.education__title{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 8px;
+}
+
+.education__descr{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 8px;
+}
+
+.footer__item{
+    display: flex;
+    flex-wrap: wrap;
+    width: 606px;
+    height: 57px;
+    margin-top: 112px;
+    margin-bottom: 64px;
+}
+
+.footer__contacts{
+    width: 50%;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.feedback{
+    width: 50%;
+    float: right;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: right;
+}

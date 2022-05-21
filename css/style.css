@@ -272,17 +272,17 @@
         display: none;
     }
     .intro{
-        padding-top: 100px;
+        padding-top: 30px;
     }
-    .header__wrapper{
-        display: none;
     .main{
         width: max-content;
     }
     .job__descr{
         padding: 0 20px;
     }
+    .feedback{
+        padding: 0 20px;
+    }
 }
-
 
 /* Media end */

@@ -52,6 +52,7 @@
 .wrapper{
     max-width: 606px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .header__wrapper{
     display: flex;
@@ -127,6 +128,7 @@
     max-width: 606px;
     margin: 0 auto;
     position: relative;
+    padding: 0 15px;
 }
 
 .experience__title{
@@ -175,6 +177,7 @@
     max-width: 606px;
     margin: 0 auto;
     position: relative;
+    padding: 0 15px;
 }
 
 .skill__title{
@@ -200,6 +203,7 @@
     max-width: 606px;
     margin: 0 auto;
     position: relative;
+    padding: 0 15px;
 }
 
 .edu__title{
@@ -260,3 +264,23 @@
     line-height: 24px;
     text-align: right;
 }
+
+/* Media start */
+
+@media screen and (max-width: 588px) {
+    .header__nav {
+        display: none;
+    }
+    .intro{
+        padding-top: 100px;
+    }
+    .header__wrapper{
+        display: none;
+    }
+    html{
+        display: flex;
+    }
+}
+
+
+/* Media end */

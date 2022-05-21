@@ -276,9 +276,8 @@
     }
     .header__wrapper{
         display: none;
-    }
-    html{
-        display: flex;
+    .main{
+        width: max-content;
     }
 }
 

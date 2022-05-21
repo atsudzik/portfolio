@@ -279,6 +279,9 @@
     .main{
         width: max-content;
     }
+    .job__descr{
+        padding: 0 20px;
+    }
 }
 
 

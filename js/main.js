@@ -145,3 +145,48 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*==================== EMAIL ====================*/
+const contactForm = document.getElementById("contact-form");
+const contactUser = document.getElementById("contact-user");
+const contactName = document.getElementById("contact-name");
+const contactText = document.getElementById("contact-text");
+const contactMessage = document.getElementById("contact-message");
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  if (contactUser.value === "") {
+    contactMessage.classList.add("color");
+    contactMessage.textContent = "You must enter your email";
+
+    setTimeout(() => {
+      contactMessage.textContent = "";
+    }, 3000);
+  } else {
+    emailjs
+      .sendForm(
+        "service_pbvz1yv",
+        "template_wdm4pvd",
+        "#contact-form",
+        "Wugs0cNQVpPUfkjVr"
+      )
+      .then(
+        () => {
+          contactMessage.textContent = "Thank you for your message";
+
+          setTimeout(() => {
+            contactMessage.textContent = "";
+          }, 3000);
+        },
+        (error) => {
+          alert("OOPS! Something has failed...", error);
+        }
+      );
+    contactUser.value = "";
+    contactName.value = "";
+    contactText.value = "";
+  }
+};
+
+contactForm.addEventListener("submit", sendEmail);

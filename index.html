@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PM. Artur Tsudzik</title>
+    <link rel="shortcut icon" href="./img/myLogo.png" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
@@ -126,7 +127,7 @@
             </div>
           </div>
           <div class="home__scroll">
-            <a class="home__scroll-button button--flex">
+            <a href="#about" class="home__scroll-button button--flex">
               <i class="uil uil-mouse-alt home__scroll-mouse"></i>
               <span class="home__scroll-name">Scroll down</span>
               <i class="uil uil-arrow-down home__scroll-arrow"></i>
@@ -142,12 +143,12 @@
           <img src="./img/about.jpeg" alt="about" class="about__img" />
           <div class="about__data">
             <p class="about__description">
-              I’m Project Manager at Cloudfresh. But I want to learn javascript
-              and become a developer.
+              I am from Belarus, but now I live in Poland. I am 27 years old. I
+              like doing sports and travelling.
             </p>
             <div class="about__info">
               <div>
-                <span class="about__info-title"> 08+ </span>
+                <span class="about__info-title"> 03+ </span>
                 <span class="about__info-name"
                   >Years <br />
                   experience</span
@@ -161,7 +162,7 @@
                 >
               </div>
               <div>
-                <span class="about__info-title"> 05+ </span>
+                <span class="about__info-title"> 03+ </span>
                 <span class="about__info-name"
                   >Companies <br />
                   worked</span
@@ -169,7 +170,10 @@
               </div>
             </div>
             <div class="about__buttons">
-              <a download="" href="" class="button button--flex"
+              <a
+                download=""
+                href="pdf/PM. Artur Tsudzik.pdf"
+                class="button button--flex"
                 >Download CV<i class="uil uil-download-alt button__icon"></i
               ></a>
             </div>
@@ -533,17 +537,18 @@
           <div class="swiper-wrapper">
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="./img/portfolio1.jpg"
+                src="./img/portfolio3.png"
                 alt="portfolio"
                 class="portfolio__img"
               />
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Slider</h3>
                 <p class="portfolio__description">
-                  Tesss lwmfwekw wmefl wqo qwmwqmofqewo oweq ofwowqoefoqw
+                  Beautiful visualisation for the slider
                 </p>
                 <a
-                  href="#"
+                  target="_blank"
+                  href="https://atsudzik.github.io/portfolio/slider/"
                   class="button button--flex button--small portfolio__button"
                 >
                   Demo
@@ -554,38 +559,40 @@
 
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="./img/portfolio2.jpg"
+                src="./img/portfolio1.png"
+                alt="portfolio"
+                class="portfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Cards</h3>
+                <p class="portfolio__description">
+                  Implementing a simple but beautiful image reveal plugin
+                </p>
+                <a
+                  href="https://atsudzik.github.io/portfolio/simpleslider/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./img/portfolio2.png"
                 alt="portfolio"
                 class="portfolio__img"
               />
               <div class="portfolio__data">
                 <h3 class="portfolio__title">To Do list</h3>
                 <p class="portfolio__description">
-                  Tesss lwmfwekw wmefl wqo qwmwqmofqewo oweq ofwowqoefoqw
+                  Drag & Drop functionality, mini Trello clone, Asanas, etc.
                 </p>
                 <a
-                  href="#"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="./img/portfolio3.jpg"
-                alt="portfolio"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Game</h3>
-                <p class="portfolio__description">
-                  Tesss lwmfwekw wmefl wqo qwmwqmofqewo oweq ofwowqoefoqw
-                </p>
-                <a
-                  href="#"
+                  href="https://atsudzik.github.io/portfolio/dragdrop/"
+                  target="_blank"
                   class="button button--flex button--small portfolio__button"
                 >
                   Demo
@@ -628,33 +635,45 @@
               </div>
             </div>
           </div>
-          <form action="" class="contact__form grid">
+          <form action="" class="contact__form grid" id="contact-form">
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input" />
+                <input
+                  name="name"
+                  type="text"
+                  class="contact__input"
+                  id="contact-name"
+                />
               </div>
 
               <div class="contact__content">
                 <label for="" class="contact__label">Email</label>
-                <input type="email" class="contact__input" />
+                <input
+                  name="email"
+                  type="email"
+                  class="contact__input"
+                  id="contact-user"
+                />
               </div>
             </div>
             <div class="contact__content">
               <label for="" class="contact__label">Message</label>
               <textarea
-                name=""
+                id="contact-text"
+                name="message"
                 id=""
                 cols="0"
                 rows="7"
                 class="contact__input"
               ></textarea>
             </div>
+            <p class="form__message" id="contact-message"></p>
             <div>
-              <a href="#" class="button button--flex"
-                >Send Message
+              <button class="button button--flex form__button" type="submit">
+                Send Message
                 <i class="uil uil-message button__icon"></i>
-              </a>
+              </button>
             </div>
           </form>
         </div>
@@ -680,13 +699,22 @@
               </li>
             </ul>
             <div class="footer__socials">
-              <a href="" target="_blank" class="footer__social"
+              <a
+                href="https://www.instagram.com/a.tsudzik/"
+                target="_blank"
+                class="footer__social"
                 ><i class="uil uil-instagram"></i
               ></a>
-              <a href="" target="_blank" class="footer__social"
+              <a
+                href="https://t.me/atsudzik"
+                target="_blank"
+                class="footer__social"
                 ><i class="uil uil-telegram-alt"></i
               ></a>
-              <a href="" target="_blank" class="footer__social"
+              <a
+                href="https://www.facebook.com/artur.tsudik.9"
+                target="_blank"
+                class="footer__social"
                 ><i class="uil uil-facebook-f"></i
               ></a>
             </div>
@@ -699,8 +727,11 @@
         <i class="uil uil-arrow-up scrollup__icon"></i>
       </a>
     </main>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
-

@@ -158,7 +158,7 @@ const sendEmail = (e) => {
 
   if (contactUser.value === "") {
     contactMessage.classList.add("color");
-    contactMessage.textContent = "You must enter your email";
+    contactMessage.textContent = "⛔️ ⛔️ ⛔️ You must enter your email ⛔️ ⛔️ ⛔️";
 
     setTimeout(() => {
       contactMessage.textContent = "";
@@ -173,7 +173,7 @@ const sendEmail = (e) => {
       )
       .then(
         () => {
-          contactMessage.textContent = "Thank you for your message";
+          contactMessage.textContent = "💛 Thank you for your message 💛";
 
           setTimeout(() => {
             contactMessage.textContent = "";

@@ -610,6 +610,10 @@ img {
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
+.form__button {
+  border: none;
+  cursor: pointer;
+}
 /*-----------------FOOTER-----------------*/
 .footer {
   padding-top: 2rem;
@@ -868,4 +872,3 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-

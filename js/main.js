@@ -173,7 +173,7 @@ const sendEmail = (e) => {
       )
       .then(
         () => {
-          contactMessage.textContent = "💛 Thank you for your message 💛";
+          contactMessage.textContent = "💛 Thank you for your message. I will be sure to reply to you within a day 💛";
 
           setTimeout(() => {
             contactMessage.textContent = "";
